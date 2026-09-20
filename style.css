@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+    line-height: 1.6;
+}
+
+.cabeçalho {
+    background-color: #111;
+    padding: 20px 40px;
+}
+
+.cabeçalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    color: #4caf50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu-lista a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-lista a:hover {
+    color: #4caf50;
+}
+
+.secao {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 40px;
+}
+
+.secao-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 500px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio-texto h1 {
+    font-size: 42px;
+    color: #176b2c;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inicio-texto p {
+    margin-bottom: 20px;
+}
+
+.inicio-imagem {
+    flex: 1;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-radius: 8px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #176b2c;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #0d421b;
+}
+
+h2 {
+    color: #176b2c;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #176b2c;
+}
+
+.problema-conteudo {
+    display: flex;
+    gap: 40px;
+}
+
+.problema-texto,
+.problema-dados {
+    flex: 1;
+}
+
+.problema-texto p {
+    margin-bottom: 20px;
+}
+
+.problema-dados {
+    background-color: white;
+    padding: 25px;
+    border-left: 4px solid #176b2c;
+}
+
+.problema-dados ul {
+    padding-left: 20px;
+}
+
+.problema-dados li {
+    margin-bottom: 12px;
+}
+
+.solucoes-intro {
+    margin-bottom: 30px;
+}
+
+.solucoes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.solucao-item {
+    background-color: white;
+    padding: 25px;
+    flex: 1 1 45%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.solucao-item:hover {
+    transform: translateY(-4px);
+    border-color: #176b2c;
+}
+
+.recursos-conteudo {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.recursos-bloco {
+    background-color: white;
+    padding: 25px;
+    flex: 1 1 30%;
+    border-radius: 6px;
+}
+
+.recursos-bloco ul {
+    padding-left: 20px;
+}
+
+.recursos-bloco li {
+    margin-bottom: 10px;
+}
+
+.recursos-bloco a {
+    color: #176b2c;
+}
+
+.recursos-bloco a:hover {
+    color: #0d421b;
+}
+
+.rodape {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.rodape p {
+    margin-bottom: 8px;
+}
+
+.rodape a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .cabeçalho {
+        padding: 20px;
+    }
+
+    .cabeçalho-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .secao {
+        padding: 40px 20px;
+    }
+
+    .secao-inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-texto h1 {
+        font-size: 34px;
+    }
+
+    .inicio-imagem img {
+        margin: auto;
+    }
+
+    .problema-conteudo {
+        flex-direction: column;
+    }
+
+    .solucao-item {
+        flex: 1 1 100%;
+    }
+
+    .recursos-bloco {
+        flex: 1 1 100%;
+    }
+
+    .link-solucao {
+    display: inline-block;
+    margin-top: 15px;
+    color: #176b2c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-solucao:hover {
+    color: #111;
+    text-decoration: underline;
+}
+}
